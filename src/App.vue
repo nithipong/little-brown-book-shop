@@ -6,7 +6,7 @@
           <h1 class="title">
             Little Brown Book Shop
           </h1>
-          listing
+          <ProductList></ProductList>
         </div>
         <div class="column is-narrow">
           <div class="cart-container">
@@ -19,8 +19,13 @@
 </template>
 
 <script>
+import ProductList from './components/ProductList'
+
 export default {
-  name: 'app'
+  name: 'app',
+  components: {
+    ProductList
+  }
 }
 </script>
 

@@ -16,13 +16,25 @@ $control-border-width: 2px
 $input-border-color: transparent
 $input-shadow: none
 
+$title-weight: 700
+
+$gap: 15px
+$column-gap: $gap
+$desktop: 1170px
+
 // Import only what you need from Bulma
-@import '~bulma/sass/utilities/_all.sass'
-@import '~bulma/sass/base/_all.sass'
-@import "~bulma/sass/elements/button.sass";
-@import "~bulma/sass/elements/container.sass";
-@import "~bulma/sass/elements/form.sass";
-@import "~bulma/sass/elements/title.sass";
-@import "~bulma/sass/components/navbar.sass";
-@import "~bulma/sass/layout/hero.sass";
-@import '~bulma/sass/grid/_all.sass';
+@import "~bulma/sass/utilities/_all.sass"
+@import "~bulma/sass/base/_all.sass"
+@import "~bulma/sass/elements/button.sass"
+@import "~bulma/sass/elements/container.sass"
+@import "~bulma/sass/elements/form.sass"
+@import "~bulma/sass/elements/title.sass"
+@import "~bulma/sass/components/card.sass"
+@import "~bulma/sass/layout/hero.sass"
+@import "~bulma/sass/grid/_all.sass"
+
+
+@import "./_helper.sass"
+
+body
+  background-color: #ecf0f1
