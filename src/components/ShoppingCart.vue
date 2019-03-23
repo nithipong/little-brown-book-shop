@@ -3,7 +3,7 @@
     <div class="wrapper-content">
       <h2 class="title is-5">Shopping Cart</h2>
 
-      <section v-if="shoppingCart.products.lenth > 0">
+      <section v-if="shoppingCart.products.length > 0">
         <table class="table shopping-cart-summary is-fullwidth is-hoverable">
           <tbody>
             <tr v-for="product in shoppingCart.products"
