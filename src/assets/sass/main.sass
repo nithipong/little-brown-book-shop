@@ -25,7 +25,7 @@ $size-1: 68px;
 $size-2: 46px;
 $size-3: 32px;
 $size-4: 24px;
-$size-5: 16px;
+$size-5: 14px;
 $size-6: 12px;
 $size-7: 10px;
 
@@ -53,3 +53,18 @@ $desktop: 1170px
 body
   background-color: #ecf0f1
   min-height: 100vh
+
+.my-notification
+  padding: 10px
+  margin: 0 5px 5px
+  font-size: 14px
+  color: #ffffff
+  background: #44A4FC
+  border-left: 5px solid $primary-green
+
+  .notification-title
+    font-size: 16px
+
+  &.success
+    background: $primary-green
+

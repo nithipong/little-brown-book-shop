@@ -1,11 +1,8 @@
 <template>
   <div class="home">
-    <div class="columns is-multiline is-mobile">
-      <div class="column is-12-touch">
+    <div class="columns">
+      <div class="column">
         <ProductList></ProductList>
-      </div>
-      <div class="column is-12-touch is-narrow-desktop">
-        <ShoppingCart></ShoppingCart>
       </div>
     </div>
   </div>
@@ -14,13 +11,11 @@
 <script>
 // @ is an alias to /src
 import ProductList from '@/components/ProductList.vue'
-import ShoppingCart from '@/components/ShoppingCart'
 
 export default {
-  name: 'home',
+  name: 'Home',
   components: {
-    ProductList,
-    ShoppingCart
+    ProductList
   }
 }
 </script>
