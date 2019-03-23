@@ -17,7 +17,7 @@
               <p>{{product.price}}฿</p>
               <br>
               <button type="button"
-                class="button is-primary is-fullwidth button-add-to-cart"
+                class="button is-fullwidth button-add-to-cart"
                 @click="addToCart(product)">
                 Add to Cart
               </button>

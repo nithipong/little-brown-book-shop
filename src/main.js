@@ -3,6 +3,7 @@ import App from './App.vue'
 import store from './store.js'
 import axios from 'axios'
 Vue.prototype.$axios = axios
+import './filters.js'
 
 require('./assets/sass/main.sass')
 

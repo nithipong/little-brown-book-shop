@@ -23,11 +23,11 @@
     </header>
 
     <main class="main-content container">
-      <div class="columns">
-        <div class="column">
+      <div class="columns is-multiline is-mobile">
+        <div class="column is-12-touch">
           <ProductList></ProductList>
         </div>
-        <div class="column is-narrow">
+        <div class="column is-12-touch is-narrow-desktop">
           <ShoppingCart></ShoppingCart>
         </div>
       </div>
@@ -49,6 +49,6 @@ export default {
 
 <style lang="sass">
 .main-content
-  padding-top: 15px
+  padding: 30px
 </style>
 
