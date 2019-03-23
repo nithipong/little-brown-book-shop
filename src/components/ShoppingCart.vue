@@ -42,8 +42,10 @@
         </table>
 
         <div class="has-text-right">
-          <button type="button"
-            class="button is-primary">Checkout</button>
+          <router-link to="/checkout"
+            class="button is-primary">
+            Checkout
+          </router-link>
         </div>
       </section>
       <section v-else>

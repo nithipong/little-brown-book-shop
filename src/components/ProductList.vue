@@ -44,11 +44,13 @@ export default {
   },
   created() {
     let self = this
-    self.$axios.get('https://api.jsonbin.io/b/5c52a1be15735a25423d3540').then(response => {
-      if(response.status == 200) {
-        self.initProducts(response.data.books)
-      }
-    })
+    if(self.products.length <= 0) {
+      self.$axios.get('https://api.jsonbin.io/b/5c52a1be15735a25423d3540').then(response => {
+        if(response.status == 200) {
+          self.initProducts(response.data.books)
+        }
+      })
+    }
   },
   methods: {
     ...mapActions([
