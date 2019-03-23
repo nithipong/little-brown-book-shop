@@ -1,15 +1,31 @@
 <template>
   <div>
     <div class="columns is-multiline">
-      <div class="column is-3"
+      <div class="column is-6"
         v-for="product in products"
         :key="product.id">
-        <div>
-          <a href="javascription:void(0)">
-            <figure class="image image-center">
-              <img :src="product.cover" :alt="product.title">
+        <div class="card">
+          <div class="columns is-gapless">
+            <div class="column is-narrow"
+              style="min-width: 150px">
+              <figure class="image">
+                <img :src="product.cover" :alt="product.title">
             </figure>
-          </a>
+            </div>
+            <div class="column">
+              <div class="product-detail">
+                <h3 class="is-size-6 has-text-weight-bold">{{product.title}}</h3>
+                <p>{{product.price}}฿</p>
+                <br>
+                <button type="button"
+                  class="button is-primary button-add-to-cart"
+                  @click="addToCart(product)">
+                  Add to Cart
+                </button>
+              </div>
+            </div>
+          </div>
+
         </div>
         <!-- end card -->
       </div>
@@ -36,7 +52,10 @@ export default {
   methods: {
     ...mapActions([
       'initProducts'
-    ])
+    ]),
+    addToCart(product) {
+      console.log(product)
+    }
   }
 }
 </script>
@@ -44,5 +63,4 @@ export default {
 <style lang='sass'>
 .product-detail
   padding: 15px
-
 </style>
