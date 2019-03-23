@@ -1,8 +1,10 @@
 import Vue from 'vue';
 import App from './App.vue';
 import store from './store';
+import axios from 'axios';
+Vue.prototype.$axios = axios;
 
-require('./assets/scss/main.scss');
+require('./assets/sass/main.sass');
 
 Vue.config.productionTip = false;
 
