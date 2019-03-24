@@ -1,0 +1,1637 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ProductList renders correctlye 1`] = `
+<div
+  class="product-list"
+>
+  <span
+    class="columns is-multiline"
+    tag="div"
+  >
+    <div
+      class="column is-6"
+      data-index="0"
+    >
+      <div
+        class="card card-product"
+      >
+        <div
+          class="columns is-mobile is-gapless"
+        >
+          <div
+            class="column is-narrow"
+            style="min-width: 150px;"
+          >
+            <figure
+              class="image product-image"
+            >
+              <img
+                alt="Harry Potter and the Philosopher's Stone (I)"
+                src="https://d1w7fb2mkkr3kw.cloudfront.net/assets/images/book/mid/9781/4088/9781408855652.jpg"
+              />
+            </figure>
+          </div>
+           
+          <div
+            class="column"
+          >
+            <div
+              class="product-detail"
+            >
+              <h3
+                class="is-size-5 has-text-weight-bold"
+              >
+                Harry Potter and the Philosopher's Stone (I)
+              </h3>
+               
+              <p>
+                350฿
+              </p>
+               
+              <br />
+               
+              <button
+                class="button is-fullwidth button-add-to-cart"
+                data-product-id="9781408855652"
+                type="button"
+              >
+                
+                Add to Cart
+              
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div
+      class="column is-6"
+      data-index="1"
+    >
+      <div
+        class="card card-product"
+      >
+        <div
+          class="columns is-mobile is-gapless"
+        >
+          <div
+            class="column is-narrow"
+            style="min-width: 150px;"
+          >
+            <figure
+              class="image product-image"
+            >
+              <img
+                alt="Harry Potter and the Chamber of Secrets (II)"
+                src="https://d1w7fb2mkkr3kw.cloudfront.net/assets/images/book/mid/9781/4088/9781408855669.jpg"
+              />
+            </figure>
+          </div>
+           
+          <div
+            class="column"
+          >
+            <div
+              class="product-detail"
+            >
+              <h3
+                class="is-size-5 has-text-weight-bold"
+              >
+                Harry Potter and the Chamber of Secrets (II)
+              </h3>
+               
+              <p>
+                350฿
+              </p>
+               
+              <br />
+               
+              <button
+                class="button is-fullwidth button-add-to-cart"
+                data-product-id="9781408855669"
+                type="button"
+              >
+                
+                Add to Cart
+              
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div
+      class="column is-6"
+      data-index="2"
+    >
+      <div
+        class="card card-product"
+      >
+        <div
+          class="columns is-mobile is-gapless"
+        >
+          <div
+            class="column is-narrow"
+            style="min-width: 150px;"
+          >
+            <figure
+              class="image product-image"
+            >
+              <img
+                alt="Harry Potter and the Prisoner of Azkaban (III)"
+                src="https://d1w7fb2mkkr3kw.cloudfront.net/assets/images/book/mid/9781/4088/9781408855676.jpg"
+              />
+            </figure>
+          </div>
+           
+          <div
+            class="column"
+          >
+            <div
+              class="product-detail"
+            >
+              <h3
+                class="is-size-5 has-text-weight-bold"
+              >
+                Harry Potter and the Prisoner of Azkaban (III)
+              </h3>
+               
+              <p>
+                340฿
+              </p>
+               
+              <br />
+               
+              <button
+                class="button is-fullwidth button-add-to-cart"
+                data-product-id="9781408855676"
+                type="button"
+              >
+                
+                Add to Cart
+              
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div
+      class="column is-6"
+      data-index="3"
+    >
+      <div
+        class="card card-product"
+      >
+        <div
+          class="columns is-mobile is-gapless"
+        >
+          <div
+            class="column is-narrow"
+            style="min-width: 150px;"
+          >
+            <figure
+              class="image product-image"
+            >
+              <img
+                alt="Harry Potter and the Goblet of Fire (IV)"
+                src="https://d1w7fb2mkkr3kw.cloudfront.net/assets/images/book/mid/9781/4088/9781408855683.jpg"
+              />
+            </figure>
+          </div>
+           
+          <div
+            class="column"
+          >
+            <div
+              class="product-detail"
+            >
+              <h3
+                class="is-size-5 has-text-weight-bold"
+              >
+                Harry Potter and the Goblet of Fire (IV)
+              </h3>
+               
+              <p>
+                360฿
+              </p>
+               
+              <br />
+               
+              <button
+                class="button is-fullwidth button-add-to-cart"
+                data-product-id="9781408855683"
+                type="button"
+              >
+                
+                Add to Cart
+              
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div
+      class="column is-6"
+      data-index="4"
+    >
+      <div
+        class="card card-product"
+      >
+        <div
+          class="columns is-mobile is-gapless"
+        >
+          <div
+            class="column is-narrow"
+            style="min-width: 150px;"
+          >
+            <figure
+              class="image product-image"
+            >
+              <img
+                alt="Harry Potter and the Order of the Phoenix (V)"
+                src="https://d1w7fb2mkkr3kw.cloudfront.net/assets/images/book/mid/9781/4088/9781408855690.jpg"
+              />
+            </figure>
+          </div>
+           
+          <div
+            class="column"
+          >
+            <div
+              class="product-detail"
+            >
+              <h3
+                class="is-size-5 has-text-weight-bold"
+              >
+                Harry Potter and the Order of the Phoenix (V)
+              </h3>
+               
+              <p>
+                380฿
+              </p>
+               
+              <br />
+               
+              <button
+                class="button is-fullwidth button-add-to-cart"
+                data-product-id="9781408855690"
+                type="button"
+              >
+                
+                Add to Cart
+              
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div
+      class="column is-6"
+      data-index="5"
+    >
+      <div
+        class="card card-product"
+      >
+        <div
+          class="columns is-mobile is-gapless"
+        >
+          <div
+            class="column is-narrow"
+            style="min-width: 150px;"
+          >
+            <figure
+              class="image product-image"
+            >
+              <img
+                alt="Harry Potter and the Half-Blood Prince (VI)"
+                src="https://d1w7fb2mkkr3kw.cloudfront.net/assets/images/book/mid/9781/4088/9781408855706.jpg"
+              />
+            </figure>
+          </div>
+           
+          <div
+            class="column"
+          >
+            <div
+              class="product-detail"
+            >
+              <h3
+                class="is-size-5 has-text-weight-bold"
+              >
+                Harry Potter and the Half-Blood Prince (VI)
+              </h3>
+               
+              <p>
+                380฿
+              </p>
+               
+              <br />
+               
+              <button
+                class="button is-fullwidth button-add-to-cart"
+                data-product-id="9781408855706"
+                type="button"
+              >
+                
+                Add to Cart
+              
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div
+      class="column is-6"
+      data-index="6"
+    >
+      <div
+        class="card card-product"
+      >
+        <div
+          class="columns is-mobile is-gapless"
+        >
+          <div
+            class="column is-narrow"
+            style="min-width: 150px;"
+          >
+            <figure
+              class="image product-image"
+            >
+              <img
+                alt="Harry Potter and the Deathly Hallows (VII)"
+                src="https://d1w7fb2mkkr3kw.cloudfront.net/assets/images/book/mid/9781/4088/9781408855713.jpg"
+              />
+            </figure>
+          </div>
+           
+          <div
+            class="column"
+          >
+            <div
+              class="product-detail"
+            >
+              <h3
+                class="is-size-5 has-text-weight-bold"
+              >
+                Harry Potter and the Deathly Hallows (VII)
+              </h3>
+               
+              <p>
+                400฿
+              </p>
+               
+              <br />
+               
+              <button
+                class="button is-fullwidth button-add-to-cart"
+                data-product-id="9781408855713"
+                type="button"
+              >
+                
+                Add to Cart
+              
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div
+      class="column is-6"
+      data-index="7"
+    >
+      <div
+        class="card card-product"
+      >
+        <div
+          class="columns is-mobile is-gapless"
+        >
+          <div
+            class="column is-narrow"
+            style="min-width: 150px;"
+          >
+            <figure
+              class="image product-image"
+            >
+              <img
+                alt="The Order of the Day"
+                src="https://d1w7fb2mkkr3kw.cloudfront.net/assets/images/book/mid/9781/5098/9781509889969.jpg"
+              />
+            </figure>
+          </div>
+           
+          <div
+            class="column"
+          >
+            <div
+              class="product-detail"
+            >
+              <h3
+                class="is-size-5 has-text-weight-bold"
+              >
+                The Order of the Day
+              </h3>
+               
+              <p>
+                270฿
+              </p>
+               
+              <br />
+               
+              <button
+                class="button is-fullwidth button-add-to-cart"
+                data-product-id="9781509889969"
+                type="button"
+              >
+                
+                Add to Cart
+              
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div
+      class="column is-6"
+      data-index="8"
+    >
+      <div
+        class="card card-product"
+      >
+        <div
+          class="columns is-mobile is-gapless"
+        >
+          <div
+            class="column is-narrow"
+            style="min-width: 150px;"
+          >
+            <figure
+              class="image product-image"
+            >
+              <img
+                alt="The Fork, the Witch, and the Worm"
+                src="https://d1w7fb2mkkr3kw.cloudfront.net/assets/images/book/mid/9780/2413/9780241392362.jpg"
+              />
+            </figure>
+          </div>
+           
+          <div
+            class="column"
+          >
+            <div
+              class="product-detail"
+            >
+              <h3
+                class="is-size-5 has-text-weight-bold"
+              >
+                The Fork, the Witch, and the Worm
+              </h3>
+               
+              <p>
+                260฿
+              </p>
+               
+              <br />
+               
+              <button
+                class="button is-fullwidth button-add-to-cart"
+                data-product-id="9780241392362"
+                type="button"
+              >
+                
+                Add to Cart
+              
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div
+      class="column is-6"
+      data-index="9"
+    >
+      <div
+        class="card card-product"
+      >
+        <div
+          class="columns is-mobile is-gapless"
+        >
+          <div
+            class="column is-narrow"
+            style="min-width: 150px;"
+          >
+            <figure
+              class="image product-image"
+            >
+              <img
+                alt="The Dakota Winters"
+                src="https://d1w7fb2mkkr3kw.cloudfront.net/assets/images/book/mid/9781/4711/9781471128387.jpg"
+              />
+            </figure>
+          </div>
+           
+          <div
+            class="column"
+          >
+            <div
+              class="product-detail"
+            >
+              <h3
+                class="is-size-5 has-text-weight-bold"
+              >
+                The Dakota Winters
+              </h3>
+               
+              <p>
+                220฿
+              </p>
+               
+              <br />
+               
+              <button
+                class="button is-fullwidth button-add-to-cart"
+                data-product-id="9781471128387"
+                type="button"
+              >
+                
+                Add to Cart
+              
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div
+      class="column is-6"
+      data-index="10"
+    >
+      <div
+        class="card card-product"
+      >
+        <div
+          class="columns is-mobile is-gapless"
+        >
+          <div
+            class="column is-narrow"
+            style="min-width: 150px;"
+          >
+            <figure
+              class="image product-image"
+            >
+              <img
+                alt="Mistborn: Secret History"
+                src="https://d1w7fb2mkkr3kw.cloudfront.net/assets/images/book/mid/9781/4732/9781473225046.jpg"
+              />
+            </figure>
+          </div>
+           
+          <div
+            class="column"
+          >
+            <div
+              class="product-detail"
+            >
+              <h3
+                class="is-size-5 has-text-weight-bold"
+              >
+                Mistborn: Secret History
+              </h3>
+               
+              <p>
+                320฿
+              </p>
+               
+              <br />
+               
+              <button
+                class="button is-fullwidth button-add-to-cart"
+                data-product-id="9781473225046"
+                type="button"
+              >
+                
+                Add to Cart
+              
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div
+      class="column is-6"
+      data-index="11"
+    >
+      <div
+        class="card card-product"
+      >
+        <div
+          class="columns is-mobile is-gapless"
+        >
+          <div
+            class="column is-narrow"
+            style="min-width: 150px;"
+          >
+            <figure
+              class="image product-image"
+            >
+              <img
+                alt="Professor Chandra Follows His Bliss"
+                src="https://d1w7fb2mkkr3kw.cloudfront.net/assets/images/book/mid/9781/7847/9781784742539.jpg"
+              />
+            </figure>
+          </div>
+           
+          <div
+            class="column"
+          >
+            <div
+              class="product-detail"
+            >
+              <h3
+                class="is-size-5 has-text-weight-bold"
+              >
+                Professor Chandra Follows His Bliss
+              </h3>
+               
+              <p>
+                280฿
+              </p>
+               
+              <br />
+               
+              <button
+                class="button is-fullwidth button-add-to-cart"
+                data-product-id="9781784742539"
+                type="button"
+              >
+                
+                Add to Cart
+              
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div
+      class="column is-6"
+      data-index="12"
+    >
+      <div
+        class="card card-product"
+      >
+        <div
+          class="columns is-mobile is-gapless"
+        >
+          <div
+            class="column is-narrow"
+            style="min-width: 150px;"
+          >
+            <figure
+              class="image product-image"
+            >
+              <img
+                alt="The Rosie Result"
+                src="https://d1w7fb2mkkr3kw.cloudfront.net/assets/images/book/mid/9781/9257/9781925773477.jpg"
+              />
+            </figure>
+          </div>
+           
+          <div
+            class="column"
+          >
+            <div
+              class="product-detail"
+            >
+              <h3
+                class="is-size-5 has-text-weight-bold"
+              >
+                The Rosie Result
+              </h3>
+               
+              <p>
+                180฿
+              </p>
+               
+              <br />
+               
+              <button
+                class="button is-fullwidth button-add-to-cart"
+                data-product-id="9781925773477"
+                type="button"
+              >
+                
+                Add to Cart
+              
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div
+      class="column is-6"
+      data-index="13"
+    >
+      <div
+        class="card card-product"
+      >
+        <div
+          class="columns is-mobile is-gapless"
+        >
+          <div
+            class="column is-narrow"
+            style="min-width: 150px;"
+          >
+            <figure
+              class="image product-image"
+            >
+              <img
+                alt="Come Rain or Come Shine"
+                src="https://d1w7fb2mkkr3kw.cloudfront.net/assets/images/book/mid/9780/5713/9780571351749.jpg"
+              />
+            </figure>
+          </div>
+           
+          <div
+            class="column"
+          >
+            <div
+              class="product-detail"
+            >
+              <h3
+                class="is-size-5 has-text-weight-bold"
+              >
+                Come Rain or Come Shine
+              </h3>
+               
+              <p>
+                275฿
+              </p>
+               
+              <br />
+               
+              <button
+                class="button is-fullwidth button-add-to-cart"
+                data-product-id="9780571351749"
+                type="button"
+              >
+                
+                Add to Cart
+              
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div
+      class="column is-6"
+      data-index="14"
+    >
+      <div
+        class="card card-product"
+      >
+        <div
+          class="columns is-mobile is-gapless"
+        >
+          <div
+            class="column is-narrow"
+            style="min-width: 150px;"
+          >
+            <figure
+              class="image product-image"
+            >
+              <img
+                alt="The Illumination of Ursula Flight"
+                src="https://d1w7fb2mkkr3kw.cloudfront.net/assets/images/book/mid/9781/7606/9781760632021.jpg"
+              />
+            </figure>
+          </div>
+           
+          <div
+            class="column"
+          >
+            <div
+              class="product-detail"
+            >
+              <h3
+                class="is-size-5 has-text-weight-bold"
+              >
+                The Illumination of Ursula Flight
+              </h3>
+               
+              <p>
+                310฿
+              </p>
+               
+              <br />
+               
+              <button
+                class="button is-fullwidth button-add-to-cart"
+                data-product-id="9781760632021"
+                type="button"
+              >
+                
+                Add to Cart
+              
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div
+      class="column is-6"
+      data-index="15"
+    >
+      <div
+        class="card card-product"
+      >
+        <div
+          class="columns is-mobile is-gapless"
+        >
+          <div
+            class="column is-narrow"
+            style="min-width: 150px;"
+          >
+            <figure
+              class="image product-image"
+            >
+              <img
+                alt="A Shout in the Ruins"
+                src="https://d1w7fb2mkkr3kw.cloudfront.net/assets/images/book/mid/9781/4736/9781473667815.jpg"
+              />
+            </figure>
+          </div>
+           
+          <div
+            class="column"
+          >
+            <div
+              class="product-detail"
+            >
+              <h3
+                class="is-size-5 has-text-weight-bold"
+              >
+                A Shout in the Ruins
+              </h3>
+               
+              <p>
+                290฿
+              </p>
+               
+              <br />
+               
+              <button
+                class="button is-fullwidth button-add-to-cart"
+                data-product-id="9781473667815"
+                type="button"
+              >
+                
+                Add to Cart
+              
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div
+      class="column is-6"
+      data-index="16"
+    >
+      <div
+        class="card card-product"
+      >
+        <div
+          class="columns is-mobile is-gapless"
+        >
+          <div
+            class="column is-narrow"
+            style="min-width: 150px;"
+          >
+            <figure
+              class="image product-image"
+            >
+              <img
+                alt="The Ocean Book"
+                src="https://d1w7fb2mkkr3kw.cloudfront.net/assets/images/book/mid/9780/8578/9780857844774.jpg"
+              />
+            </figure>
+          </div>
+           
+          <div
+            class="column"
+          >
+            <div
+              class="product-detail"
+            >
+              <h3
+                class="is-size-5 has-text-weight-bold"
+              >
+                The Ocean Book
+              </h3>
+               
+              <p>
+                260฿
+              </p>
+               
+              <br />
+               
+              <button
+                class="button is-fullwidth button-add-to-cart"
+                data-product-id="9780857844774"
+                type="button"
+              >
+                
+                Add to Cart
+              
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div
+      class="column is-6"
+      data-index="17"
+    >
+      <div
+        class="card card-product"
+      >
+        <div
+          class="columns is-mobile is-gapless"
+        >
+          <div
+            class="column is-narrow"
+            style="min-width: 150px;"
+          >
+            <figure
+              class="image product-image"
+            >
+              <img
+                alt="Enlightenment Now"
+                src="https://d1w7fb2mkkr3kw.cloudfront.net/assets/images/book/mid/9780/1419/9780141979090.jpg"
+              />
+            </figure>
+          </div>
+           
+          <div
+            class="column"
+          >
+            <div
+              class="product-detail"
+            >
+              <h3
+                class="is-size-5 has-text-weight-bold"
+              >
+                Enlightenment Now
+              </h3>
+               
+              <p>
+                220฿
+              </p>
+               
+              <br />
+               
+              <button
+                class="button is-fullwidth button-add-to-cart"
+                data-product-id="9780141979090"
+                type="button"
+              >
+                
+                Add to Cart
+              
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div
+      class="column is-6"
+      data-index="18"
+    >
+      <div
+        class="card card-product"
+      >
+        <div
+          class="columns is-mobile is-gapless"
+        >
+          <div
+            class="column is-narrow"
+            style="min-width: 150px;"
+          >
+            <figure
+              class="image product-image"
+            >
+              <img
+                alt="The New Complete Book of Self-Sufficiency"
+                src="https://d1w7fb2mkkr3kw.cloudfront.net/assets/images/book/mid/9780/2413/9780241352465.jpg"
+              />
+            </figure>
+          </div>
+           
+          <div
+            class="column"
+          >
+            <div
+              class="product-detail"
+            >
+              <h3
+                class="is-size-5 has-text-weight-bold"
+              >
+                The New Complete Book of Self-Sufficiency
+              </h3>
+               
+              <p>
+                190฿
+              </p>
+               
+              <br />
+               
+              <button
+                class="button is-fullwidth button-add-to-cart"
+                data-product-id="9780241352465"
+                type="button"
+              >
+                
+                Add to Cart
+              
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div
+      class="column is-6"
+      data-index="19"
+    >
+      <div
+        class="card card-product"
+      >
+        <div
+          class="columns is-mobile is-gapless"
+        >
+          <div
+            class="column is-narrow"
+            style="min-width: 150px;"
+          >
+            <figure
+              class="image product-image"
+            >
+              <img
+                alt="The Monk of Mokha"
+                src="https://d1w7fb2mkkr3kw.cloudfront.net/assets/images/book/mid/9780/2419/9780241975367.jpg"
+              />
+            </figure>
+          </div>
+           
+          <div
+            class="column"
+          >
+            <div
+              class="product-detail"
+            >
+              <h3
+                class="is-size-5 has-text-weight-bold"
+              >
+                The Monk of Mokha
+              </h3>
+               
+              <p>
+                230฿
+              </p>
+               
+              <br />
+               
+              <button
+                class="button is-fullwidth button-add-to-cart"
+                data-product-id="9780241975367"
+                type="button"
+              >
+                
+                Add to Cart
+              
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div
+      class="column is-6"
+      data-index="20"
+    >
+      <div
+        class="card card-product"
+      >
+        <div
+          class="columns is-mobile is-gapless"
+        >
+          <div
+            class="column is-narrow"
+            style="min-width: 150px;"
+          >
+            <figure
+              class="image product-image"
+            >
+              <img
+                alt="The Language of Kindness"
+                src="https://d1w7fb2mkkr3kw.cloudfront.net/assets/images/book/mid/9781/7847/9781784706883.jpg"
+              />
+            </figure>
+          </div>
+           
+          <div
+            class="column"
+          >
+            <div
+              class="product-detail"
+            >
+              <h3
+                class="is-size-5 has-text-weight-bold"
+              >
+                The Language of Kindness
+              </h3>
+               
+              <p>
+                300฿
+              </p>
+               
+              <br />
+               
+              <button
+                class="button is-fullwidth button-add-to-cart"
+                data-product-id="9781784706883"
+                type="button"
+              >
+                
+                Add to Cart
+              
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div
+      class="column is-6"
+      data-index="21"
+    >
+      <div
+        class="card card-product"
+      >
+        <div
+          class="columns is-mobile is-gapless"
+        >
+          <div
+            class="column is-narrow"
+            style="min-width: 150px;"
+          >
+            <figure
+              class="image product-image"
+            >
+              <img
+                alt="Elastic"
+                src="https://d1w7fb2mkkr3kw.cloudfront.net/assets/images/book/mid/9780/1419/9780141987392.jpg"
+              />
+            </figure>
+          </div>
+           
+          <div
+            class="column"
+          >
+            <div
+              class="product-detail"
+            >
+              <h3
+                class="is-size-5 has-text-weight-bold"
+              >
+                Elastic
+              </h3>
+               
+              <p>
+                250฿
+              </p>
+               
+              <br />
+               
+              <button
+                class="button is-fullwidth button-add-to-cart"
+                data-product-id="9780141987392"
+                type="button"
+              >
+                
+                Add to Cart
+              
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div
+      class="column is-6"
+      data-index="22"
+    >
+      <div
+        class="card card-product"
+      >
+        <div
+          class="columns is-mobile is-gapless"
+        >
+          <div
+            class="column is-narrow"
+            style="min-width: 150px;"
+          >
+            <figure
+              class="image product-image"
+            >
+              <img
+                alt="Death Row: The Final Minutes"
+                src="https://d1w7fb2mkkr3kw.cloudfront.net/assets/images/book/mid/9781/7887/9781788701495.jpg"
+              />
+            </figure>
+          </div>
+           
+          <div
+            class="column"
+          >
+            <div
+              class="product-detail"
+            >
+              <h3
+                class="is-size-5 has-text-weight-bold"
+              >
+                Death Row: The Final Minutes
+              </h3>
+               
+              <p>
+                230฿
+              </p>
+               
+              <br />
+               
+              <button
+                class="button is-fullwidth button-add-to-cart"
+                data-product-id="9781788701495"
+                type="button"
+              >
+                
+                Add to Cart
+              
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div
+      class="column is-6"
+      data-index="23"
+    >
+      <div
+        class="card card-product"
+      >
+        <div
+          class="columns is-mobile is-gapless"
+        >
+          <div
+            class="column is-narrow"
+            style="min-width: 150px;"
+          >
+            <figure
+              class="image product-image"
+            >
+              <img
+                alt="Dog Man 4: Dog Man and Cat Kid"
+                src="https://d1w7fb2mkkr3kw.cloudfront.net/assets/images/book/mid/9781/4071/9781407192123.jpg"
+              />
+            </figure>
+          </div>
+           
+          <div
+            class="column"
+          >
+            <div
+              class="product-detail"
+            >
+              <h3
+                class="is-size-5 has-text-weight-bold"
+              >
+                Dog Man 4: Dog Man and Cat Kid
+              </h3>
+               
+              <p>
+                310฿
+              </p>
+               
+              <br />
+               
+              <button
+                class="button is-fullwidth button-add-to-cart"
+                data-product-id="9781407192123"
+                type="button"
+              >
+                
+                Add to Cart
+              
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div
+      class="column is-6"
+      data-index="24"
+    >
+      <div
+        class="card card-product"
+      >
+        <div
+          class="columns is-mobile is-gapless"
+        >
+          <div
+            class="column is-narrow"
+            style="min-width: 150px;"
+          >
+            <figure
+              class="image product-image"
+            >
+              <img
+                alt="The Colour of the Sun"
+                src="https://d1w7fb2mkkr3kw.cloudfront.net/assets/images/book/mid/9781/4449/9781444941135.jpg"
+              />
+            </figure>
+          </div>
+           
+          <div
+            class="column"
+          >
+            <div
+              class="product-detail"
+            >
+              <h3
+                class="is-size-5 has-text-weight-bold"
+              >
+                The Colour of the Sun
+              </h3>
+               
+              <p>
+                180฿
+              </p>
+               
+              <br />
+               
+              <button
+                class="button is-fullwidth button-add-to-cart"
+                data-product-id="9781444941135"
+                type="button"
+              >
+                
+                Add to Cart
+              
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div
+      class="column is-6"
+      data-index="25"
+    >
+      <div
+        class="card card-product"
+      >
+        <div
+          class="columns is-mobile is-gapless"
+        >
+          <div
+            class="column is-narrow"
+            style="min-width: 150px;"
+          >
+            <figure
+              class="image product-image"
+            >
+              <img
+                alt="The Minimalist Home: A Room-By-Room Guide to a Decluttered, Refocused Life"
+                src="https://d1w7fb2mkkr3kw.cloudfront.net/assets/images/book/mid/9781/6014/9781601427991.jpg"
+              />
+            </figure>
+          </div>
+           
+          <div
+            class="column"
+          >
+            <div
+              class="product-detail"
+            >
+              <h3
+                class="is-size-5 has-text-weight-bold"
+              >
+                The Minimalist Home: A Room-By-Room Guide to a Decluttered, Refocused Life
+              </h3>
+               
+              <p>
+                400฿
+              </p>
+               
+              <br />
+               
+              <button
+                class="button is-fullwidth button-add-to-cart"
+                data-product-id="9781601427991"
+                type="button"
+              >
+                
+                Add to Cart
+              
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div
+      class="column is-6"
+      data-index="26"
+    >
+      <div
+        class="card card-product"
+      >
+        <div
+          class="columns is-mobile is-gapless"
+        >
+          <div
+            class="column is-narrow"
+            style="min-width: 150px;"
+          >
+            <figure
+              class="image product-image"
+            >
+              <img
+                alt="How to Survive the End of the World "
+                src="https://d1w7fb2mkkr3kw.cloudfront.net/assets/images/book/mid/9781/4736/9781473659711.jpg"
+              />
+            </figure>
+          </div>
+           
+          <div
+            class="column"
+          >
+            <div
+              class="product-detail"
+            >
+              <h3
+                class="is-size-5 has-text-weight-bold"
+              >
+                How to Survive the End of the World 
+              </h3>
+               
+              <p>
+                120฿
+              </p>
+               
+              <br />
+               
+              <button
+                class="button is-fullwidth button-add-to-cart"
+                data-product-id="9781473659711"
+                type="button"
+              >
+                
+                Add to Cart
+              
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div
+      class="column is-6"
+      data-index="27"
+    >
+      <div
+        class="card card-product"
+      >
+        <div
+          class="columns is-mobile is-gapless"
+        >
+          <div
+            class="column is-narrow"
+            style="min-width: 150px;"
+          >
+            <figure
+              class="image product-image"
+            >
+              <img
+                alt="Solve For Happy"
+                src="https://d1w7fb2mkkr3kw.cloudfront.net/assets/images/book/mid/9781/5098/9781509809950.jpg"
+              />
+            </figure>
+          </div>
+           
+          <div
+            class="column"
+          >
+            <div
+              class="product-detail"
+            >
+              <h3
+                class="is-size-5 has-text-weight-bold"
+              >
+                Solve For Happy
+              </h3>
+               
+              <p>
+                160฿
+              </p>
+               
+              <br />
+               
+              <button
+                class="button is-fullwidth button-add-to-cart"
+                data-product-id="9781509809950"
+                type="button"
+              >
+                
+                Add to Cart
+              
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div
+      class="column is-6"
+      data-index="28"
+    >
+      <div
+        class="card card-product"
+      >
+        <div
+          class="columns is-mobile is-gapless"
+        >
+          <div
+            class="column is-narrow"
+            style="min-width: 150px;"
+          >
+            <figure
+              class="image product-image"
+            >
+              <img
+                alt="The Confidence Project"
+                src="https://d1w7fb2mkkr3kw.cloudfront.net/assets/images/book/mid/9781/4736/9781473634176.jpg"
+              />
+            </figure>
+          </div>
+           
+          <div
+            class="column"
+          >
+            <div
+              class="product-detail"
+            >
+              <h3
+                class="is-size-5 has-text-weight-bold"
+              >
+                The Confidence Project
+              </h3>
+               
+              <p>
+                345฿
+              </p>
+               
+              <br />
+               
+              <button
+                class="button is-fullwidth button-add-to-cart"
+                data-product-id="9781473634176"
+                type="button"
+              >
+                
+                Add to Cart
+              
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </span>
+</div>
+`;

@@ -1,6 +1,7 @@
 import Vue from 'vue';
 import router from './router';
-import store from './store.js';
+import Vuex from 'vuex';
+import myStore from './store.js';
 import App from './App.vue';
 
 // fontawesome
@@ -41,6 +42,9 @@ import './filters.js';
 require('./assets/sass/main.sass');
 
 Vue.config.productionTip = false;
+
+Vue.use(Vuex);
+const store = new Vuex.Store(myStore);
 
 new Vue({
   store,

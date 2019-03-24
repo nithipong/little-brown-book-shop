@@ -1,53 +1,52 @@
 <template>
-  <transition-custom>
-    <div class="product-list"
-      v-show="products.length > 0">
-      <transition-group tag="div"
-        class="columns is-multiline"
-        name="catd-product"
-        :css="false"
-        @before-enter="beforeEnter"
-        @enter="enter"
-        @leave="leave">
-        <div v-for="(product, index) in products"
-          :key="product.id"
-          :data-index="index"
-          class="column is-6">
-          <div class="card">
-            <div class="columns is-mobile is-gapless">
-              <div class="column is-narrow"
-                style="min-width: 150px">
-                <figure class="image product-image">
-                  <img :src="product.cover"
+  <div class="product-list"
+    v-show="products.length > 0">
+    <transition-group tag="div"
+      class="columns is-multiline"
+      :css="false"
+      @before-enter="beforeEnter"
+      @enter="enter"
+      @leave="leave">
+      <div v-for="(product, index) in products"
+        :key="product.id"
+        :data-index="index"
+        class="column is-6">
+        <div class="card card-product">
+          <div class="columns is-mobile is-gapless">
+            <div class="column is-narrow"
+              style="min-width: 150px">
+              <figure class="image product-image">
+                <img :src="product.cover"
                     :alt="product.title" />
                 </figure>
-              </div>
-              <div class="column">
-                <div class="product-detail">
-                  <h3 class="is-size-5 has-text-weight-bold">{{ product.title }}</h3>
-                  <p>{{ product.price }}฿</p>
-                  <br />
-                  <button type="button"
-                    class="button is-fullwidth button-add-to-cart"
-                    @click="addToCart(product)">
-                    Add to Cart
-                  </button>
-                </div>
+            </div>
+            <div class="column">
+              <div class="product-detail">
+                <h3 class="is-size-5 has-text-weight-bold">{{ product.title }}</h3>
+                <p>{{ product.price }}฿</p>
+                <br />
+                <button type="button"
+                  class="button is-fullwidth button-add-to-cart"
+                  :data-product-id="product.id"
+                  @click="addToCart(product)">
+                  Add to Cart
+                </button>
               </div>
             </div>
           </div>
         </div>
-      </transition-group>
-    </div>
-  </transition-custom>
+      </div>
+    </transition-group>
+  </div>
 </template>
 
 <script>
 import { mapActions } from "vuex";
+import Books from "../../books.json";
 export default {
   data() {
     return {
-      products: this.$store.state.products
+      products: Books.books
     };
   },
   computed: {
