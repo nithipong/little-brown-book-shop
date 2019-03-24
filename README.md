@@ -1,4 +1,5 @@
 # Little-brown-book-shop
+[![Netlify Status](https://api.netlify.com/api/v1/badges/7c855184-bc4e-4a5f-b7fd-40d171ca8e2e/deploy-status)](https://app.netlify.com/sites/nithipong-little-brown-book-shop/deploys)
 
 Demo
 https://nithipong-little-brown-book-shop.netlify.com/#/
