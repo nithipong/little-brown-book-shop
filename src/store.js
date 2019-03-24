@@ -1,12 +1,14 @@
+const objectShoppingCart = {
+  products: [],
+  subtotal: 0,
+  discount: 0,
+  discountText: null,
+  net: 0,
+  count: 0
+};
+
 const state = {
-  shoppingCart: {
-    products: [],
-    subtotal: 0,
-    discount: 0,
-    discountText: null,
-    net: 0,
-    count: 0
-  }
+  shoppingCart: objectShoppingCart
 };
 
 const mutations = {
@@ -71,14 +73,7 @@ const mutations = {
   },
 
   RESET_STATE_SHOPPING_CART(state) {
-    state.shoppingCart = {
-      products: [],
-      subtotal: 0,
-      discount: 0,
-      discountText: null,
-      net: 0,
-      count: 0
-    };
+    state.shoppingCart = objectShoppingCart;
   }
 };
 

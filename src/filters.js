@@ -1,6 +1,7 @@
-import numeral from 'numeraljs';
 import Vue from 'vue';
+import numeral from 'numeraljs';
 
 Vue.filter('formatCurrency', value => {
-  return numeral(value).format('0,0[.]00');
+  if (value) return numeral(value).format('0,0[.]00');
+  return value;
 });

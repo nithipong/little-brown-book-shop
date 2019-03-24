@@ -1,7 +1,7 @@
 <template>
   <div class="shopping-cart-container">
     <h2 class="title is-5">Shopping Cart</h2>
-    <section v-if="shoppingCart.products.length > 0">
+    <section v-if="shoppingCart.count > 0">
       <table class="table shopping-cart-summary is-fullwidth is-hoverable">
         <tbody>
           <tr v-for="product in shoppingCart.products"
@@ -27,7 +27,7 @@
               class="has-text-right">
               Discount <span class="">({{ shoppingCart.discountText }})</span>
             </td>
-            <td class="has-text-right">
+            <td class="has-text-right summary-discount">
               {{ shoppingCart.discount | formatCurrency }}
             </td>
           </tr>
@@ -36,13 +36,12 @@
               class="has-text-right has-text-weight-bold">
               Net
             </td>
-            <td class="has-text-right has-text-weight-bold">
+            <td class="has-text-right has-text-weight-bold summary-net">
               {{ shoppingCart.net | formatCurrency }}
             </td>
           </tr>
         </tfoot>
       </table>
-
     </section>
     <section v-else>
       Cart is Empty
@@ -51,16 +50,23 @@
 </template>
 
 <script>
+import { mapActions } from "vuex";
 export default {
-  computed: {
-    shoppingCart() {
-      return this.$store.state.shoppingCart;
-    }
+  props: {
+    "props-shopping-cart": Object
+  },
+  data() {
+    return {
+      shoppingCart: Object.assign({}, this.propsShoppingCart)
+    };
+  },
+  methods: {
+    ...mapActions(["addToShoppingCart", "updateProductQty", "removeProduct"])
   }
 };
 </script>
 
-<style lang="sass" scope>
+<style lang="sass">
 .shopping-cart-container
   background-color: white
   padding: 15px

@@ -42,7 +42,7 @@
 
 <script>
 import { mapActions } from "vuex";
-import Books from "../../books.json";
+import Books from "@/books.json";
 export default {
   data() {
     return {

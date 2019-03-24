@@ -3,7 +3,7 @@
     <div class="columns">
       <div class="column is-7"
         id="ss">
-        <ShoppingCart />
+        <ShoppingCart :props-shopping-cart="stateShoppingCart" />
         <br />
         <router-link to="/"
           class="button">
@@ -11,20 +11,25 @@
         </router-link>
       </div>
       <div class="column is-5">
-        <Payment />
+        <Payment :props-shopping-cart="stateShoppingCart" />
       </div>
     </div>
   </div>
 </template>
 
 <script>
-import ShoppingCart from "@/components/ShoppingCart";
-import Payment from "@/components/Payment";
+import ShoppingCart from "@/components/ShoppingCart.vue";
+import Payment from "@/components/Payment.vue";
 export default {
   name: "Checkout",
   components: {
     ShoppingCart,
     Payment
+  },
+  computed: {
+    stateShoppingCart() {
+      return this.$store.state.shoppingCart;
+    }
   }
 };
 </script>
