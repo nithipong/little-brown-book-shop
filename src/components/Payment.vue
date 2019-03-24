@@ -25,9 +25,8 @@
           <div class="field">
             <p class="control">
               <input class="input is-large has-text-right"
-                type="number"
-                v-model="given"
-                v-money="money"
+                type="text"
+                v-model.trim.number="given"
                 autofocus>
             </p>
           </div>
@@ -51,33 +50,28 @@
       </div>
 
       <div class="field">
-        <router-link to="/thankyou"
-          type="button"
-          class="button is-primary is-fullwidth">
-          Pay
-        </router-link>
+        <button type="button"
+          class="button is-primary is-fullwidth"
+          :disabled="!allowToPay"
+          @click="payBill()">
+          <span class="icon is-medium">
+            <font-awesome-icon icon="money-bill-wave" />
+          </span>
+          <span>
+            Pay
+          </span>
+        </button>
       </div>
     </div>
   </div>
 </template>
 
 <script>
-import { Money } from "v-money";
-
 export default {
   name: "Payment",
-  directives: { money: "v-money" },
   data() {
     return {
-      given: 0,
-      money: {
-        decimal: ",",
-        thousands: ".",
-        prefix: "R$ ",
-        suffix: " #",
-        precision: 0,
-        masked: false /* doesn't work with directive */
-      }
+      given: null
     };
   },
   computed: {
@@ -85,7 +79,18 @@ export default {
       return this.$store.state.shoppingCart;
     },
     change() {
-      return this.shoppingCart.net - this.given;
+      return this.given > 0 ? this.given - this.shoppingCart.net : null;
+    },
+    allowToPay() {
+      return this.given > 0 && this.change >= 0 && this.shoppingCart.net > 0;
+    }
+  },
+  methods: {
+    payBill() {
+      let self = this;
+      setTimeout(() => {
+        self.$router.push("/thankyou");
+      }, 600);
     }
   }
 };
@@ -97,4 +102,7 @@ export default {
   padding: 15px
 .field-label
   min-width: 100px
+  .label
+    color: #444
+    font-weight: normal
 </style>

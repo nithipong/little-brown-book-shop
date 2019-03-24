@@ -15,8 +15,8 @@
             <td>
               <h3 class="is-size-5 has-text-weight-bold">{{ product.title }}</h3>
             </td>
-            <td class="column-qty is-size-5 is-number">x{{ product.qty }}</td>
-            <td class="column-price is-size-5 is-number">
+            <td class="column-qty is-size-5">x{{ product.qty }}</td>
+            <td class="column-price is-size-5">
               {{ (product.price * product.qty) | formatCurrency }}
             </td>
           </tr>
@@ -25,9 +25,9 @@
           <tr v-if="shoppingCart.discount">
             <td colspan="3"
               class="has-text-right">
-              Discount <span class="is-number">({{ shoppingCart.discountText }})</span>
+              Discount <span class="">({{ shoppingCart.discountText }})</span>
             </td>
-            <td class="has-text-right is-number">
+            <td class="has-text-right">
               {{ shoppingCart.discount | formatCurrency }}
             </td>
           </tr>
@@ -36,7 +36,7 @@
               class="has-text-right has-text-weight-bold">
               Net
             </td>
-            <td class="has-text-right is-number has-text-weight-bold">
+            <td class="has-text-right has-text-weight-bold">
               {{ shoppingCart.net | formatCurrency }}
             </td>
           </tr>

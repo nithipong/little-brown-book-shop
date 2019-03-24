@@ -25,7 +25,7 @@
               <div class="column">
                 <div class="product-detail">
                   <h3 class="is-size-5 has-text-weight-bold">{{ product.title }}</h3>
-                  <p class="is-number">{{ product.price }}฿</p>
+                  <p>{{ product.price }}฿</p>
                   <br />
                   <button type="button"
                     class="button is-fullwidth button-add-to-cart"
