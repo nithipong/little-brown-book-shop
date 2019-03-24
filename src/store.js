@@ -1,14 +1,16 @@
-const objectShoppingCart = {
-  products: [],
-  subtotal: 0,
-  discount: 0,
-  discountText: null,
-  net: 0,
-  count: 0
+const getDefaultState = () => {
+  return {
+    products: [],
+    subtotal: 0,
+    discount: 0,
+    discountText: null,
+    net: 0,
+    count: 0
+  };
 };
 
 const state = {
-  shoppingCart: objectShoppingCart
+  shoppingCart: getDefaultState()
 };
 
 const mutations = {
@@ -68,7 +70,7 @@ const mutations = {
   },
 
   RESET_STATE_SHOPPING_CART(state) {
-    state.shoppingCart = Object.assign({}, objectShoppingCart);
+    state.shoppingCart = Object.assign(state.shoppingCart, getDefaultState());
   }
 };
 
