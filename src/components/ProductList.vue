@@ -55,7 +55,7 @@ export default {
     }
   },
   methods: {
-    ...mapActions(["addToShoppingCart", "updateProductQty", "removeProduct"]),
+    ...mapActions(["addToShoppingCart", "updateProductQty"]),
 
     addToCart(product) {
       let self = this;

@@ -61,7 +61,7 @@ export default {
     };
   },
   methods: {
-    ...mapActions(["addToShoppingCart", "updateProductQty", "removeProduct"])
+    ...mapActions(["addToShoppingCart", "updateProductQty"])
   }
 };
 </script>

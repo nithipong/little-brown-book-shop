@@ -12,11 +12,6 @@ const state = {
 };
 
 const mutations = {
-  // set products to state
-  SET_STATE_PRODUCT(state, products) {
-    state.products = products;
-  },
-
   // add product to shopping cart
   ADD_STATE_SHOPPING_CART(state, payload) {
     state.shoppingCart.products.push(payload.product);
@@ -78,7 +73,6 @@ const mutations = {
 };
 
 const actions = {
-  // this action will check. if have existing product will use update.
   addToShoppingCart: ({ commit }, payload) => {
     commit('ADD_STATE_SHOPPING_CART', payload);
     commit('UPDATE_SHOPPING_CART');
@@ -87,10 +81,6 @@ const actions = {
   updateProductQty: ({ commit }, payload) => {
     commit('UPDATE_PRODUCT_QTY', payload);
     commit('UPDATE_SHOPPING_CART');
-  },
-
-  removeProduct: ({ commit }, payload) => {
-    commit('REMOVE_PRODUCT', payload);
   },
 
   resetShoppingCart: ({ commit }) => {
