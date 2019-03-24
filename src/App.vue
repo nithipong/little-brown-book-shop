@@ -27,7 +27,9 @@
       </nav>
     </header>
     <main class="main-content container">
-      <router-view />
+      <transition-custom>
+        <router-view />
+      </transition-custom>
     </main>
 
     <notifications group="noti"
