@@ -16,10 +16,13 @@
             <div class="buttons">
               <router-link to="/checkout"
                 class="button is-primary">
-                <span class="icon is-medium	">
+                <span class="icon is-medium">
                   <font-awesome-icon icon="shopping-cart" />
                 </span>
-                <span>Checkout</span>
+                <span v-if="shoppingCart.net <= 0">Checkout</span>
+                <span v-else class="has-text-weight-bold">
+                  {{shoppingCart.net | formatCurrency}}
+                </span>
               </router-link>
             </div>
           </div>
@@ -37,6 +40,17 @@
       :position="'bottom right'" />
   </div>
 </template>
+
+<script>
+export default {
+  computed: {
+    shoppingCart() {
+      return this.$store.state.shoppingCart;
+    }
+  }
+};
+</script>
+
 
 <style lang="sass">
 .header-container
