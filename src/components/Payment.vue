@@ -84,7 +84,12 @@ export default {
         : 0;
     },
     allowToPay() {
-      return this.cash > 0 && this.change >= 0 && this.shoppingCart.net > 0;
+      return (
+        this.cash > 0 &&
+        this.change >= 0 &&
+        this.cash >= this.shoppingCart.net &&
+        this.shoppingCart.net > 0
+      );
     }
   },
   methods: {
