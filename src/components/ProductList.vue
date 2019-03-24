@@ -23,7 +23,7 @@
             <div class="column">
               <div class="product-detail">
                 <h3 class="is-size-5 has-text-weight-bold">{{ product.title }}</h3>
-                <p>{{ product.price }}฿</p>
+                <p class="is-size-4 has-text-primary">{{ product.price }}฿</p>
                 <br />
                 <button type="button"
                   class="button is-fullwidth button-add-to-cart"
