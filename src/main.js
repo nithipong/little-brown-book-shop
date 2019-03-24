@@ -46,6 +46,21 @@ Vue.config.productionTip = false;
 Vue.use(Vuex);
 const store = new Vuex.Store(myStore);
 
+import 'autotrack';
+import 'autotrack/lib/plugins/event-tracker';
+import 'autotrack/lib/plugins/outbound-link-tracker';
+import 'autotrack/lib/plugins/url-change-tracker';
+
+if (ga != undefined) {
+  ga('create', 'UA-25805570-8', 'auto');
+
+  // Only require the plugins you've imported above.
+  ga('require', 'eventTracker');
+  ga('require', 'outboundLinkTracker');
+  ga('require', 'urlChangeTracker');
+
+  ga('send', 'pageview');
+}
 new Vue({
   store,
   router,
