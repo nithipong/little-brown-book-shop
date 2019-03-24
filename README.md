@@ -3,6 +3,9 @@
 Demo
 https://nithipong-little-brown-book-shop.netlify.com/#/
 
+Github
+https://github.com/nithipong/little-brown-book-shop
+
 ## Project setup
 ```
 yarn install
