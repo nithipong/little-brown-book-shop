@@ -10,6 +10,7 @@
     "testing": "vue-cli-service test:unit --watch --notify"
   },
   "dependencies": {
+    "@babel/runtime": "7.0.0-beta.55",
     "@babel/runtime-corejs2": "^7.4.2",
     "@fortawesome/fontawesome-svg-core": "^1.2.17",
     "@fortawesome/free-solid-svg-icons": "^5.8.1",
