@@ -27,6 +27,7 @@ Vue.prototype.$velocity = velocity;
 
 // notification
 import Notifications from 'vue-notification';
+Vue.use(Notifications, { velocity });
 
 // component transition
 import TransitionCustom from './components/TransitionCustom.vue';
@@ -34,7 +35,6 @@ Vue.component('transition-custom', TransitionCustom);
 
 // filter
 import './filters.js';
-Vue.use(Notifications);
 
 // css
 // eslint-disable-next-line no-undef

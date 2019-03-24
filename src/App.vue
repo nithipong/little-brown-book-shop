@@ -42,7 +42,9 @@
     <notifications group="noti"
       :classes="'my-notification'"
       :position="'top right'"
-      :duration="600" />
+      :duration="1200"
+      :animation-type="'velocity'"
+      :animation="{'enter': 'transition.slideDownIn', 'leave': 'transition.slideRightOut'}" />
   </div>
 </template>
 
