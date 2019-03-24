@@ -70,6 +70,16 @@ export default new Vuex.Store({
 
       state.shoppingCart.discount = discount;
       state.shoppingCart.net = subtotal - discount;
+    },
+
+    RESET_STATE_SHOPPING_CART(state) {
+      state.shoppingCart = {
+        products: [],
+        subtotal: 0,
+        discount: 0,
+        discountText: null,
+        net: 0
+      };
     }
   },
   actions: {
@@ -90,6 +100,10 @@ export default new Vuex.Store({
 
     removeProduct: ({ commit }, payload) => {
       commit('REMOVE_PRODUCT', payload);
+    },
+
+    resetShoppingCart: ({ commit }) => {
+      commit('RESET_STATE_SHOPPING_CART');
     }
   }
 });

@@ -6,10 +6,10 @@ import App from './App.vue';
 // fontawesome
 import { library } from '@fortawesome/fontawesome-svg-core';
 // icon name
-import { faShoppingCart } from '@fortawesome/free-solid-svg-icons';
+import { faShoppingCart, faMoneyBillWave, faCheckCircle } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome';
 // add fontName before add into this
-library.add(faShoppingCart);
+library.add(faShoppingCart, faMoneyBillWave, faCheckCircle);
 Vue.component('font-awesome-icon', FontAwesomeIcon);
 
 // axios
