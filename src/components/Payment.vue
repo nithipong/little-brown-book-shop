@@ -19,14 +19,14 @@
       </div>
       <div class="field is-horizontal is-vertical-center">
         <div class="field-label is-normal">
-          <label class="label">Given</label>
+          <label class="label">Cash</label>
         </div>
         <div class="field-body">
           <div class="field">
             <p class="control">
               <input class="input is-large has-text-right"
                 type="tel"
-                v-model.trim.number="given"
+                v-model.trim.number="cash"
                 autofocus>
             </p>
           </div>
@@ -71,7 +71,7 @@ export default {
   name: "Payment",
   data() {
     return {
-      given: null
+      cash: null
     };
   },
   computed: {
@@ -79,10 +79,12 @@ export default {
       return this.$store.state.shoppingCart;
     },
     change() {
-      return this.given > 0 ? this.given - this.shoppingCart.net : null;
+      return this.cash > 0 && this.cash >= this.shoppingCart.net
+        ? this.cash - this.shoppingCart.net
+        : 0;
     },
     allowToPay() {
-      return this.given > 0 && this.change >= 0 && this.shoppingCart.net > 0;
+      return this.cash > 0 && this.change >= 0 && this.shoppingCart.net > 0;
     }
   },
   methods: {
