@@ -44,7 +44,35 @@
       "plugin:vue/essential",
       "eslint:recommended"
     ],
-    "rules": {},
+    "rules": {
+      "semi": [
+        2,
+        "never"
+      ],
+      "no-console": [
+        "error",
+        {
+          "allow": [
+            "warn",
+            "error"
+          ]
+        }
+      ],
+      "vue/max-attributes-per-line": [
+        "error",
+        {
+          "singleline": 1,
+          "multiline": {
+            "max": 1,
+            "allowFirstLine": true
+          }
+        }
+      ]
+    },
+    "globals": {
+      "Velocity": true,
+      "$": true
+    },
     "parserOptions": {
       "parser": "babel-eslint"
     }

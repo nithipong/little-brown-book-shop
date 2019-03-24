@@ -3,8 +3,10 @@
     <header class="header-container">
       <nav class="navbar is-fixed-top">
         <div class="navbar-brand">
-          <router-link to="/" class="navbar-item">
-            <span class="has-text-weight-bold" style="padding-left: 10px">
+          <router-link to="/"
+            class="navbar-item">
+            <span class="has-text-weight-bold"
+              style="padding-left: 10px">
               Little Brown Book Shop
             </span>
           </router-link>
@@ -12,7 +14,8 @@
         <div class="navbar-end">
           <div class="navbar-item">
             <div class="buttons">
-              <router-link to="/checkout" class="button is-primary">
+              <router-link to="/checkout"
+                class="button is-primary">
                 <span class="icon is-medium	">
                   <font-awesome-icon icon="shopping-cart" />
                 </span>
@@ -27,7 +30,9 @@
       <router-view />
     </main>
 
-    <notifications group="noti" :classes="'my-notification'" :position="'bottom right'" />
+    <notifications group="noti"
+      :classes="'my-notification'"
+      :position="'bottom right'" />
   </div>
 </template>
 

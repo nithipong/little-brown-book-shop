@@ -1,5 +1,4 @@
 <template>
-
   <div class="shopping-cart-container">
     <div class="wrapper-content">
       <h2 class="title is-5">Shopping Cart</h2>
@@ -7,7 +6,8 @@
       <section v-if="shoppingCart.products.length > 0">
         <table class="table shopping-cart-summary is-fullwidth is-hoverable">
           <tbody>
-            <tr v-for="product in shoppingCart.products" :key="product.id">
+            <tr v-for="product in shoppingCart.products"
+              :key="product.id">
               <td>
                 <h3 class="is-size-5 has-text-weight-bold">{{ product.title }}</h3>
               </td>
@@ -19,7 +19,8 @@
           </tbody>
           <tfoot>
             <tr v-if="shoppingCart.discount">
-              <td colspan="2" class="has-text-right">
+              <td colspan="2"
+                class="has-text-right">
                 Discount <span class="is-number">({{ shoppingCart.discountText }})</span>
               </td>
               <td class="has-text-right is-number">
@@ -27,7 +28,8 @@
               </td>
             </tr>
             <tr>
-              <td colspan="2" class="has-text-right">
+              <td colspan="2"
+                class="has-text-right">
                 Net
               </td>
               <td class="has-text-right is-number has-text-weight-bold">
@@ -38,7 +40,8 @@
         </table>
 
         <div class="has-text-right">
-          <router-link to="/checkout" class="button is-primary">
+          <router-link to="/checkout"
+            class="button is-primary">
             <span class="icon is-medium	">
               <font-awesome-icon icon="shopping-cart" />
             </span>

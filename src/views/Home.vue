@@ -10,10 +10,10 @@
 
 <script>
 // @ is an alias to /src
-import ProductList from '@/components/ProductList.vue'
+import ProductList from "@/components/ProductList.vue"
 
 export default {
-  name: 'Home',
+  name: "Home",
   components: {
     ProductList
   }
