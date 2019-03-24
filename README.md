@@ -1,4 +1,7 @@
-# little-brown-book-shop
+# Little-brown-book-shop
+
+Demo
+https://nithipong-little-brown-book-shop.netlify.com/#/
 
 ## Project setup
 ```
