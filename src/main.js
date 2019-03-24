@@ -1,3 +1,5 @@
+/*global ga*/
+
 import Vue from 'vue';
 import router from './router';
 import Vuex from 'vuex';
