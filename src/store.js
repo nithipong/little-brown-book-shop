@@ -73,7 +73,7 @@ const mutations = {
   },
 
   RESET_STATE_SHOPPING_CART(state) {
-    state.shoppingCart = objectShoppingCart;
+    state.shoppingCart = Object.assign({}, objectShoppingCart);
   }
 };
 
