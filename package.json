@@ -43,10 +43,7 @@
       "eslint:recommended"
     ],
     "rules": {
-      "semi": [
-        2,
-        "never"
-      ],
+      "semi": "error",
       "no-console": [
         "error",
         {

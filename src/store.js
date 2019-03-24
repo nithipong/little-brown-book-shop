@@ -1,7 +1,7 @@
-import Vue from 'vue'
-import Vuex from 'vuex'
+import Vue from 'vue';
+import Vuex from 'vuex';
 
-Vue.use(Vuex)
+Vue.use(Vuex);
 
 export default new Vuex.Store({
   state: {
@@ -17,28 +17,28 @@ export default new Vuex.Store({
   mutations: {
     // set products to state
     SET_STATE_PRODUCT(state, products) {
-      state.products = products
+      state.products = products;
     },
 
     // add product to shopping cart
     ADD_STATE_SHOPPING_CART(state, payload) {
-      state.shoppingCart.products.push(payload.product)
+      state.shoppingCart.products.push(payload.product);
     },
 
     // update products in shopping cart
     UPDATE_PRODUCT_QTY(state, payload) {
-      state.shoppingCart.products[payload.productIndex].qty = payload.product.qty
+      state.shoppingCart.products[payload.productIndex].qty = payload.product.qty;
     },
 
     REMOVE_PRODUCT(state, payload) {
-      state.shoppingCart.products.splice(payload.productIndex, 1)
+      state.shoppingCart.products.splice(payload.productIndex, 1);
     },
 
     UPDATE_SHOPPING_CART(state) {
       let subtotal = 0,
         subtotal_for_discount = 0,
         discount = 0,
-        uniqueBook = 0
+        uniqueBook = 0;
 
       let uniqueBookId = [
         9781408855652,
@@ -48,48 +48,48 @@ export default new Vuex.Store({
         9781408855690,
         9781408855706,
         9781408855713
-      ]
+      ];
 
       state.shoppingCart.products.forEach(product => {
-        subtotal += Number(product.price) * product.qty
+        subtotal += Number(product.price) * product.qty;
         if (uniqueBookId.includes(Number(product.id))) {
-          uniqueBook++
-          subtotal_for_discount += Number(product.price)
+          uniqueBook++;
+          subtotal_for_discount += Number(product.price);
         }
-      })
+      });
 
-      state.shoppingCart.discountText = null
+      state.shoppingCart.discountText = null;
       if (uniqueBook >= 2) {
-        let percentDiscount = 10
+        let percentDiscount = 10;
         if (uniqueBook - 2 !== 0) {
-          percentDiscount += uniqueBook - 2
+          percentDiscount += uniqueBook - 2;
         }
-        discount = subtotal_for_discount * 0.01 * percentDiscount
-        state.shoppingCart.discountText = `${percentDiscount}%`
+        discount = subtotal_for_discount * 0.01 * percentDiscount;
+        state.shoppingCart.discountText = `${percentDiscount}%`;
       }
 
-      state.shoppingCart.discount = discount
-      state.shoppingCart.net = subtotal - discount
+      state.shoppingCart.discount = discount;
+      state.shoppingCart.net = subtotal - discount;
     }
   },
   actions: {
     initProducts: ({ commit }, products) => {
-      commit('SET_STATE_PRODUCT', products)
+      commit('SET_STATE_PRODUCT', products);
     },
 
     // this action will check. if have existing product will use update.
     addToShoppingCart: ({ commit }, payload) => {
-      commit('ADD_STATE_SHOPPING_CART', payload)
-      commit('UPDATE_SHOPPING_CART')
+      commit('ADD_STATE_SHOPPING_CART', payload);
+      commit('UPDATE_SHOPPING_CART');
     },
 
     updateProductQty: ({ commit }, payload) => {
-      commit('UPDATE_PRODUCT_QTY', payload)
-      commit('UPDATE_SHOPPING_CART')
+      commit('UPDATE_PRODUCT_QTY', payload);
+      commit('UPDATE_SHOPPING_CART');
     },
 
     removeProduct: ({ commit }, payload) => {
-      commit('REMOVE_PRODUCT', payload)
+      commit('REMOVE_PRODUCT', payload);
     }
   }
-})
+});

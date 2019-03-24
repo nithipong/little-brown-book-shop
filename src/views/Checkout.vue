@@ -1,7 +1,15 @@
 <template>
   <transition-custom>
     <div class="about">
-      <ShoppingCart></ShoppingCart>
+      <div class="columns">
+        <div class="column is-6"
+          id="ss">
+          <ShoppingCart />
+        </div>
+        <div class="column is-6">
+          <Payment />
+        </div>
+      </div>
       <router-link to="/"
         class="button">
         back
@@ -11,11 +19,13 @@
 </template>
 
 <script>
-import ShoppingCart from "@/components/ShoppingCart"
+import ShoppingCart from "@/components/ShoppingCart";
+import Payment from "@/components/Payment";
 export default {
   name: "Checkout",
   components: {
-    ShoppingCart
+    ShoppingCart,
+    Payment
   }
-}
+};
 </script>

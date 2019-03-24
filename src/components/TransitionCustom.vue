@@ -19,7 +19,7 @@ export default {
   props: {
     mode: {
       type: String,
-      default: 'out-in'
+      default: "out-in"
     },
     duration: {
       type: Number,
@@ -29,58 +29,58 @@ export default {
       type: Object,
       default: function() {
         return {
-          enter: 'transition.slideUpIn',
-          leave: 'transition.slideDownOut'
-        }
+          enter: "transition.slideUpIn",
+          leave: "transition.slideDownOut"
+        };
       }
     },
     display: {
       type: String,
-      defaul: 'block'
+      defaul: "block"
     }
   },
 
   methods: {
     afterAppearHook() {
-      this.$emit('after-appear')
+      this.$emit("after-appear");
     },
 
     beforeAppearHook() {},
 
     appearHook(el, done) {
-      var self = this
+      var self = this;
       self.$velocity($(el), self.effect.enter, {
         duration: self.duration,
         complete: done,
         display: self.display
-      })
+      });
     },
 
     enterHook(el, done) {
-      var self = this
+      var self = this;
       self.$velocity($(el), self.effect.enter, {
         duration: self.duration,
         complete: done,
         display: self.display
-      })
+      });
     },
 
     afterEnterHook() {
-      this.$emit('after-enter')
+      this.$emit("after-enter");
     },
 
     leaveHook(el, done) {
-      var self = this
+      var self = this;
       self.$velocity($(el), self.effect.leave, {
         duration: self.duration,
         complete: done,
         display: self.display
-      })
+      });
     },
 
     afterLeaveHook() {
-      this.$emit('after-leave')
+      this.$emit("after-leave");
     }
   }
-}
+};
 </script>
