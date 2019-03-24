@@ -25,7 +25,7 @@
           <div class="field">
             <p class="control">
               <input class="input is-large has-text-right"
-                type="text"
+                type="tel"
                 v-model.trim.number="given"
                 autofocus>
             </p>

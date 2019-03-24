@@ -15,14 +15,18 @@
           <div class="navbar-item">
             <div class="buttons">
               <router-link to="/checkout"
-                class="button is-primary">
+                class="button is-primary button-checkout">
                 <span class="icon is-medium">
                   <font-awesome-icon icon="shopping-cart" />
                 </span>
-                <span v-if="shoppingCart.net <= 0">Checkout</span>
-                <span v-else class="has-text-weight-bold">
-                  {{shoppingCart.net | formatCurrency}}
+                <span v-if="shoppingCart.net <= 0"
+                  class="is-hidden-mobile">
+                  Checkout
                 </span>
+                <span v-else
+                    class="has-text-weight-bold is-hidden-mobile">
+                    {{shoppingCart.net | formatCurrency}}
+                  </span>
               </router-link>
             </div>
           </div>
@@ -37,7 +41,8 @@
 
     <notifications group="noti"
       :classes="'my-notification'"
-      :position="'bottom right'" />
+      :position="'top right'"
+      :duration="600" />
   </div>
 </template>
 
@@ -71,4 +76,8 @@ export default {
   padding: 30px 30px 60px 30px
   @media (max-width: 1169px)
     padding: 30px 15px 60px 15px
+.button-checkout
+  @media (max-width: 767px)
+    .icon
+      margin: 0 !important
 </style>

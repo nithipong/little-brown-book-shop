@@ -8,7 +8,10 @@
             <div class="has-text-centered"
               style="margin-bottom: 15px">
               <span class="icon">
-                <font-awesome-icon icon="check-circle" size="3x" style="color: #00b900"></font-awesome-icon>
+                <font-awesome-icon
+                  icon="check-circle"
+                  size="3x"
+                  style="color: #00b900" />
               </span>
             </div>
             <h1 class="title is-3">Thank You</h1>
