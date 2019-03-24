@@ -1,11 +1,12 @@
 import Vue from 'vue';
 import Vuex from 'vuex';
+import Books from '../books.json';
 
 Vue.use(Vuex);
 
 export default new Vuex.Store({
   state: {
-    products: [],
+    products: Books.books,
     shoppingCart: {
       products: [],
       subtotal: 0,
@@ -83,10 +84,6 @@ export default new Vuex.Store({
     }
   },
   actions: {
-    initProducts: ({ commit }, products) => {
-      commit('SET_STATE_PRODUCT', products);
-    },
-
     // this action will check. if have existing product will use update.
     addToShoppingCart: ({ commit }, payload) => {
       commit('ADD_STATE_SHOPPING_CART', payload);

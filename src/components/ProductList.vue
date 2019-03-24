@@ -45,33 +45,18 @@
 <script>
 import { mapActions } from "vuex";
 export default {
+  data() {
+    return {
+      products: this.$store.state.products
+    };
+  },
   computed: {
-    products() {
-      return this.$store.state.products;
-    },
     shoppingCart() {
       return this.$store.state.shoppingCart;
     }
   },
-  created() {
-    let self = this;
-    if (self.products.length <= 0) {
-      self.$axios
-        .get("https://api.jsonbin.io/b/5c52a1be15735a25423d3540")
-        .then(response => {
-          if (response.status == 200) {
-            self.initProducts(response.data.books);
-          }
-        });
-    }
-  },
   methods: {
-    ...mapActions([
-      "initProducts",
-      "addToShoppingCart",
-      "updateProductQty",
-      "removeProduct"
-    ]),
+    ...mapActions(["addToShoppingCart", "updateProductQty", "removeProduct"]),
 
     addToCart(product) {
       let self = this;
