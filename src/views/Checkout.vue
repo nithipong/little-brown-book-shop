@@ -1,21 +1,20 @@
 <template>
-  <transition-custom>
-    <div class="about">
-      <div class="columns">
-        <div class="column is-6"
-          id="ss">
-          <ShoppingCart />
-        </div>
-        <div class="column is-6">
-          <Payment />
-        </div>
+  <div class="about">
+    <div class="columns">
+      <div class="column is-7"
+        id="ss">
+        <ShoppingCart />
+        <br />
+        <router-link to="/"
+          class="button">
+          Continue to shopping
+        </router-link>
       </div>
-      <router-link to="/"
-        class="button">
-        back
-      </router-link>
+      <div class="column is-5">
+        <Payment />
+      </div>
     </div>
-  </transition-custom>
+  </div>
 </template>
 
 <script>

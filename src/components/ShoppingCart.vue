@@ -6,10 +6,12 @@
         <tbody>
           <tr v-for="product in shoppingCart.products"
             :key="product.id">
-            <td>
-              <img :src="product.cover"
+            <td width="100px">
+              <figure class="image">
+                <img :src="product.cover"
                   :alt="product.title">
-              </td>
+              </figure>
+            </td>
             <td>
               <h3 class="is-size-5 has-text-weight-bold">{{ product.title }}</h3>
             </td>
@@ -31,7 +33,7 @@
           </tr>
           <tr>
             <td colspan="3"
-              class="has-text-right">
+              class="has-text-right has-text-weight-bold">
               Net
             </td>
             <td class="has-text-right is-number has-text-weight-bold">
@@ -41,15 +43,6 @@
         </tfoot>
       </table>
 
-      <div class="has-text-right">
-        <router-link to="/checkout"
-          class="button is-primary">
-          <span class="icon is-medium	">
-              <font-awesome-icon icon="shopping-cart" />
-            </span>
-          <span>Checkout</span>
-        </router-link>
-      </div>
     </section>
     <section v-else>
       Cart is Empty
